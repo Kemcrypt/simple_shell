@@ -58,12 +58,12 @@ int _mycd(info_t *info)
 		{
 			_puts(s);
 			_putchar('\n');
-			return (1)
+			return (1);
 		}
 		_puts(_getenv(info, "OLDPWD=")), _putchar('\n');
 		chdir_ret = /* TODO: what should this be? */
 			chdir((dir = _getenv(info, "OLDPWD=")) ? dir : "/");
-	} 
+	}
 	else
 		chdir_ret = chdir(info->argv[1]);
 	if (chdir_ret == -1)
@@ -95,4 +95,3 @@ int _myhelp(info_t *info)
 		_puts(*arg_array); /* temp att_unused workaround */
 	return (0);
 }
- *
