@@ -85,5 +85,3 @@ int _putchar(char c)
 		buf[i++] = c;
 	return (1);
 }
-Footer
-© 2023 GitHub, Inc.
